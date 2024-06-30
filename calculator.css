@@ -1,0 +1,63 @@
+body{
+  /* background-color: rgba(49, 49, 49, 0.658); */
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(20, 20, 20, 0.664);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);  
+}
+
+/* .main-div{
+  width: 100vw;
+  height: 100vh;
+}  */
+
+.num-btn{
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  row-gap: 2px;
+  column-gap: 2px;
+}
+
+button{
+  height: 100px;
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+  color: rgb(212, 212, 212);
+}
+
+button:hover{
+  background-color: rgba(129, 129, 129, 0.89);
+}
+
+.butn{
+  background: rgba(20, 20, 20, 0.527);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);  
+}
+.number-btn{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+#answer{
+  height: 60px;
+  /* background-color: aqua; */
+  font-size: 75px;
+  font-weight: 700;
+}
+
+#display{
+  width: 960px;
+  height: 45px;
+  font-size: 30px;
+}
+
+#answer, #display{
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px 20px; 
+  color: rgb(226, 226, 226);
+}

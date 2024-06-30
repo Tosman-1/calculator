@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div id="display"></div>
+      <div id="answer"></div>
+      <div class="num-btn">
+        <!-- <input type="" /> -->
+        <!-- <button class="butn" value="" onclick="getBtnVal(event)"></button> -->
+        <button class="butn" value="" onclick="getBtnVal(event)">CE</button>
+        <button class="butn" value="" onclick="clearDisplay()">C</button>
+        <button class="butn" value="" onclick="delVal()">DEL</button>
+        <button class="butn" value="/" onclick="getOper(event)">/</button>
+        <button class="number-btn" value="7" onclick="getBtnVal(event)">
+          7
+        </button>
+        <button class="number-btn" value="8" onclick="getBtnVal(event)">
+          8
+        </button>
+        <button class="number-btn" value="9" onclick="getBtnVal(event)">
+          9
+        </button>
+        <button class="butn" value="*" onclick="getOper(event)">x</button>
+        <button class="number-btn" value="4" onclick="getBtnVal(event)">
+          4
+        </button>
+        <button class="number-btn" value="5" onclick="getBtnVal(event)">
+          5
+        </button>
+        <button class="number-btn" value="6" onclick="getBtnVal(event)">
+          6
+        </button>
+        <button class="butn" value="-" onclick="getOper(event)">-</button>
+        <button class="number-btn" value="1" onclick="getBtnVal(event)">
+          1
+        </button>
+        <button class="number-btn" value="2" onclick="getBtnVal(event)">
+          2
+        </button>
+        <button class="number-btn" value="3" onclick="getBtnVal(event)">
+          3
+        </button>
+        <button class="butn" value="+" onclick="getOper(event)">+</button>
+        <button class="butn" value="" onclick="power()">X <sup>2</sup></button>
+        <button class="number-btn" value="0" onclick="getBtnVal(event)">
+          0
+        </button>
+        <button class="butn" value="." onclick="getBtnVal(event)">.</button>
+        <button class="butn" value="" onclick="getAnswer()">=</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
