@@ -20,11 +20,23 @@ function getBtnVal(ev) {
 function getAnswer() {
  if (value1 == '') {
   return '0'
- } else {
+ } 
   const result = new Function('return ' + value1)();
   answer.innerText = result
   value2 = Number(result)
- }
+ 
+}
+
+function histDisplay() {
+  hisArr = [{
+    firgure: value1,
+    solution: value2
+  }]
+
+  hisArr.forEach((a,i) => {
+    let html = `<p> ${a.firgure} =  `
+  });
+
 }
 
 function getOper(ev) {
