@@ -13,11 +13,12 @@
         <div id="answer"></div>
         <div class="num-btn">
           <!-- <input type="" /> -->
-          <!-- <button class="butn" value="" onclick="getBtnVal(event)"></button> -->
-          <button class="butn" value="" onclick="getBtnVal(event)">CE</button>
+          <button class="butn" value="%" onclick="percent()">%</button>
+          <button class="butn" value="" onclick="reloadCal()">CE</button>
           <button class="butn" value="" onclick="clearDisplay()">C</button>
           <button class="butn" value="" onclick="delVal()">DEL</button>
           <button class="butn" value="/" onclick="getOper(event)">/</button>
+          <button class="butn" value="" onclick="squrt()">√</button>
           <button class="number-btn" value="7" onclick="getBtnVal(event)">
             7
           </button>
@@ -28,6 +29,9 @@
             9
           </button>
           <button class="butn" value="*" onclick="getOper(event)">x</button>
+          <button class="butn" value="" onclick="power(3)">
+            &#119909;<sup>3</sup>
+          </button>
           <button class="number-btn" value="4" onclick="getBtnVal(event)">
             4
           </button>
@@ -38,6 +42,9 @@
             6
           </button>
           <button class="butn" value="-" onclick="getOper(event)">-</button>
+          <button class="butn" value="" onclick="power(2)">
+            &#119909;<sup>2</sup>
+          </button>
           <button class="number-btn" value="1" onclick="getBtnVal(event)">
             1
           </button>
@@ -48,13 +55,14 @@
             3
           </button>
           <button class="butn" value="+" onclick="getOper(event)">+</button>
-          <button class="butn" value="" onclick="power()">
-            X <sup>2</sup>
+          <button class="butn" value="" onclick="over()">
+            &#8543; &#119909;
           </button>
+          <button class="butn" value="" onclick="plusAndMinus()">+/-</button>
           <button class="number-btn" value="0" onclick="getBtnVal(event)">
             0
           </button>
-          <button class="butn" value="." onclick="getBtnVal(event)">.</button>
+          <button class="butn" value="." onclick="checkCond(event)">.</button>
           <button class="butn" value="" onclick="getAnswer()">=</button>
         </div>
       </div>
@@ -62,7 +70,7 @@
         <div class="top-n">
           <p>History</p>
         </div>
-        <div id="his-dis"></div>
+        <div id="hisDis"></div>
       </div>
     </div>
     <script src="calculator.js"></script>
